@@ -16,4 +16,5 @@ public interface IPlayerService {
 
 	void deletePlayer(Integer playerId);
 	
+	List<String> getPlayerNamesByCountry(String countryStateName);
 }

@@ -56,4 +56,11 @@ public class PlayerController {
 
 		playerService.deletePlayer(playerId);
 	}
+	
+	@GetMapping("/country/{countryStateName}")
+	public List<String> getPlayerNamesByCountry(
+	        @PathVariable String countryStateName) {
+
+	    return playerService.getPlayerNamesByCountry(countryStateName);
+	}
 }
